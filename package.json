@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "deploy": "npm run build && rm -rf index.html assets vite.svg && cp -r dist/* . && git add . && git diff --cached --quiet || (git commit -m 'Deploy site' && git push origin main)"
   },
   "dependencies": {
     "bootstrap": "^5.2.3",
