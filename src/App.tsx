@@ -5,6 +5,7 @@ function App() {
   return (
     <div>
       <Alert>My Alert</Alert>
+      <Alert>My Alert</Alert>
       <Button color="secondary" onClick={() => console.log("Clicked")}>
         Hello
       </Button>
