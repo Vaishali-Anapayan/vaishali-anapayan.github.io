@@ -8,6 +8,7 @@ function App() {
       <Button color="secondary" onClick={() => console.log("Clicked")}>
         Hello
       </Button>
+      <p className="fs-1">Relevant Courses</p>
     </div>
   );
 }
